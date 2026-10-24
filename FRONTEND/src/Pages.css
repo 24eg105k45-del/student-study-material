@@ -1,0 +1,172 @@
+/* Extra styles for the new pages. Works alongside your existing App.css. */
+
+.page-heading {
+  margin-bottom: 20px;
+}
+
+.row-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-button.is-saved {
+  color: #5457d6;
+  background: #eeefff;
+}
+
+/* Subject filter chips */
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.chip {
+  border: 1px solid #e3e5ef;
+  background: #fff;
+  color: #4a4f68;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: #5457d6;
+}
+
+.chip-active {
+  background: #5457d6;
+  border-color: #5457d6;
+  color: #fff;
+}
+
+/* Forms */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 640px;
+  background: #fff;
+  border: 1px solid #e8eaf3;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.field > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a2e45;
+}
+
+.field input,
+.field select {
+  font: inherit;
+  padding: 11px 12px;
+  border: 1px solid #dcdfec;
+  border-radius: 10px;
+  background: #fff;
+  color: #1c2033;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: 2px solid #5457d6;
+  outline-offset: 1px;
+}
+
+.field-row {
+  display: flex;
+  gap: 16px;
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #2a2e45;
+}
+
+.form-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form-error {
+  background: #fdecec;
+  color: #b42318;
+}
+
+.form-success {
+  background: #e8f7ee;
+  color: #1b7a43;
+}
+
+.form-note {
+  margin: 0;
+  font-size: 13px;
+  color: #7a7f99;
+}
+
+.form-card .primary-button {
+  align-self: flex-start;
+}
+
+/* Login page */
+.login-wrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f5f6fb;
+  padding: 24px;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border: 1px solid #e8eaf3;
+  border-radius: 18px;
+  padding: 32px;
+}
+
+.login-card h2 {
+  margin: 0;
+}
+
+.login-card p {
+  margin: 0;
+  color: #7a7f99;
+}
+
+.login-submit {
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .field-row {
+    flex-direction: column;
+  }
+
+  .material-row .row-actions {
+    margin-left: auto;
+  }
+}
